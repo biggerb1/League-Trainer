@@ -16,5 +16,15 @@ namespace League_Trainer
         {
             InitializeComponent();
         }
+
+        private void Button_show_CS_Trainer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_show_map_awareness_trainer_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
