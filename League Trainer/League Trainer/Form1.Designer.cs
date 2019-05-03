@@ -80,6 +80,7 @@
             this.ClientSize = new System.Drawing.Size(551, 450);
             this.Controls.Add(this.groupBox1);
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "League Trainer";
             this.groupBox1.ResumeLayout(false);
