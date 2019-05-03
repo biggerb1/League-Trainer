@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace League_Trainer
+namespace League_Trainer.Creep_Score_Trainer
 {
     public partial class Creep_Score_Trainer : Form
     {

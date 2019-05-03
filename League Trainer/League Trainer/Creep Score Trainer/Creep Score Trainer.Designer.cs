@@ -1,4 +1,4 @@
-﻿namespace League_Trainer
+﻿namespace League_Trainer.Creep_Score_Trainer
 {
     partial class Creep_Score_Trainer
     {
@@ -28,18 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Creep_Score_Trainer));
             this.gameTimeDisplay = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.startButton = new System.Windows.Forms.Button();
             this.resetButton = new System.Windows.Forms.Button();
             this.groupBox_Instructions = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.Panel_recording = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Panel_CS_Scores = new System.Windows.Forms.Panel();
+            this.historyGrid = new System.Windows.Forms.DataGridView();
             this.session_datetime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CS_at_10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CS_missed = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.Panel_CS_Scores = new System.Windows.Forms.Panel();
+            this.mic_Display_Control1 = new League_Trainer.Creep_Score_Trainer.Mic_Display_Control();
+            this.groupBox_Instructions.SuspendLayout();
+            this.Panel_recording.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.historyGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // gameTimeDisplay
@@ -81,6 +86,7 @@
             // 
             // groupBox_Instructions
             // 
+            this.groupBox_Instructions.Controls.Add(this.label2);
             this.groupBox_Instructions.Location = new System.Drawing.Point(12, 9);
             this.groupBox_Instructions.Name = "groupBox_Instructions";
             this.groupBox_Instructions.Size = new System.Drawing.Size(191, 573);
@@ -88,34 +94,36 @@
             this.groupBox_Instructions.TabStop = false;
             this.groupBox_Instructions.Text = "Instructions";
             // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(7, 20);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(178, 550);
+            this.label2.TabIndex = 0;
+            this.label2.Text = resources.GetString("label2.Text");
+            // 
             // Panel_recording
             // 
+            this.Panel_recording.Controls.Add(this.mic_Display_Control1);
             this.Panel_recording.Location = new System.Drawing.Point(255, 116);
             this.Panel_recording.Name = "Panel_recording";
             this.Panel_recording.Size = new System.Drawing.Size(312, 48);
             this.Panel_recording.TabIndex = 4;
             // 
-            // dataGridView1
+            // historyGrid
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.historyGrid.AllowUserToAddRows = false;
+            this.historyGrid.AllowUserToDeleteRows = false;
+            this.historyGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.historyGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.session_datetime,
             this.CS_at_10,
             this.CS_missed});
-            this.dataGridView1.Location = new System.Drawing.Point(209, 284);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(394, 298);
-            this.dataGridView1.TabIndex = 5;
-            // 
-            // Panel_CS_Scores
-            // 
-            this.Panel_CS_Scores.Location = new System.Drawing.Point(210, 175);
-            this.Panel_CS_Scores.Name = "Panel_CS_Scores";
-            this.Panel_CS_Scores.Size = new System.Drawing.Size(393, 96);
-            this.Panel_CS_Scores.TabIndex = 6;
+            this.historyGrid.Location = new System.Drawing.Point(209, 284);
+            this.historyGrid.Name = "historyGrid";
+            this.historyGrid.ReadOnly = true;
+            this.historyGrid.Size = new System.Drawing.Size(394, 298);
+            this.historyGrid.TabIndex = 5;
             // 
             // session_datetime
             // 
@@ -136,13 +144,28 @@
             this.CS_missed.Name = "CS_missed";
             this.CS_missed.ReadOnly = true;
             // 
+            // Panel_CS_Scores
+            // 
+            this.Panel_CS_Scores.Location = new System.Drawing.Point(210, 175);
+            this.Panel_CS_Scores.Name = "Panel_CS_Scores";
+            this.Panel_CS_Scores.Size = new System.Drawing.Size(393, 96);
+            this.Panel_CS_Scores.TabIndex = 6;
+            // 
+            // mic_Display_Control1
+            // 
+            this.mic_Display_Control1.Location = new System.Drawing.Point(7, 7);
+            this.mic_Display_Control1.Name = "mic_Display_Control1";
+            this.mic_Display_Control1.Size = new System.Drawing.Size(32, 32);
+            this.mic_Display_Control1.state = League_Trainer.Creep_Score_Trainer.Mic_Display_Control.circleColor.Red;
+            this.mic_Display_Control1.TabIndex = 0;
+            // 
             // Creep_Score_Trainer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(615, 594);
             this.Controls.Add(this.Panel_CS_Scores);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.historyGrid);
             this.Controls.Add(this.Panel_recording);
             this.Controls.Add(this.groupBox_Instructions);
             this.Controls.Add(this.resetButton);
@@ -154,7 +177,9 @@
             this.MinimizeBox = false;
             this.Name = "Creep_Score_Trainer";
             this.Text = "Creep_Score_Trainer";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox_Instructions.ResumeLayout(false);
+            this.Panel_recording.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.historyGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -168,10 +193,12 @@
         private System.Windows.Forms.Button resetButton;
         private System.Windows.Forms.GroupBox groupBox_Instructions;
         private System.Windows.Forms.Panel Panel_recording;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView historyGrid;
         private System.Windows.Forms.Panel Panel_CS_Scores;
         private System.Windows.Forms.DataGridViewTextBoxColumn session_datetime;
         private System.Windows.Forms.DataGridViewTextBoxColumn CS_at_10;
         private System.Windows.Forms.DataGridViewTextBoxColumn CS_missed;
+        private System.Windows.Forms.Label label2;
+        private Mic_Display_Control mic_Display_Control1;
     }
 }

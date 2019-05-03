@@ -1,11 +1,11 @@
-G:\Github\League-Trainer\League Trainer\League Trainer\bin\Debug\League Trainer.exe.config
-G:\Github\League-Trainer\League Trainer\League Trainer\bin\Debug\League Trainer.exe
-G:\Github\League-Trainer\League Trainer\League Trainer\bin\Debug\League Trainer.pdb
-G:\Github\League-Trainer\League Trainer\League Trainer\obj\Debug\League Trainer.csprojAssemblyReference.cache
-G:\Github\League-Trainer\League Trainer\League Trainer\obj\Debug\League_Trainer.Creep_Score_Trainer.resources
+G:\Github\League-Trainer\League Trainer\League Trainer\obj\Debug\League_Trainer.Creep_Score_Trainer.Mic_Display_Control.resources
 G:\Github\League-Trainer\League Trainer\League Trainer\obj\Debug\League_Trainer.Form1.resources
 G:\Github\League-Trainer\League Trainer\League Trainer\obj\Debug\League_Trainer.Properties.Resources.resources
 G:\Github\League-Trainer\League Trainer\League Trainer\obj\Debug\League Trainer.csproj.GenerateResource.cache
 G:\Github\League-Trainer\League Trainer\League Trainer\obj\Debug\League Trainer.csproj.CoreCompileInputs.cache
+G:\Github\League-Trainer\League Trainer\League Trainer\obj\Debug\League_Trainer.Creep_Score_Trainer.Creep_Score_Trainer.resources
+G:\Github\League-Trainer\League Trainer\League Trainer\bin\Debug\League Trainer.exe.config
+G:\Github\League-Trainer\League Trainer\League Trainer\bin\Debug\League Trainer.exe
+G:\Github\League-Trainer\League Trainer\League Trainer\bin\Debug\League Trainer.pdb
 G:\Github\League-Trainer\League Trainer\League Trainer\obj\Debug\League Trainer.exe
 G:\Github\League-Trainer\League Trainer\League Trainer\obj\Debug\League Trainer.pdb

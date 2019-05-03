@@ -46,11 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Creep Score Trainer.cs">
+    <Compile Include="Creep Score Trainer\Creep Score Trainer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Creep Score Trainer.Designer.cs">
+    <Compile Include="Creep Score Trainer\Creep Score Trainer.Designer.cs">
       <DependentUpon>Creep Score Trainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Creep Score Trainer\Mic Display Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Creep Score Trainer\Mic Display Control.Designer.cs">
+      <DependentUpon>Mic Display Control.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -60,8 +66,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Creep Score Trainer.resx">
+    <EmbeddedResource Include="Creep Score Trainer\Creep Score Trainer.resx">
       <DependentUpon>Creep Score Trainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Creep Score Trainer\Mic Display Control.resx">
+      <DependentUpon>Mic Display Control.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

@@ -19,7 +19,7 @@ namespace League_Trainer
 
         private void Button_show_CS_Trainer_Click(object sender, EventArgs e)
         {
-            Creep_Score_Trainer cs = new Creep_Score_Trainer();
+            Creep_Score_Trainer.Creep_Score_Trainer cs = new Creep_Score_Trainer.Creep_Score_Trainer();
             cs.Show();
         }
 
